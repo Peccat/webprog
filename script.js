@@ -22,3 +22,15 @@ function kepfeltoltes{
 		}
 	}
 }
+
+function login{
+	
+}
+
+function signup{
+
+}
+
+function contact{
+
+}

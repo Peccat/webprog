@@ -1,12 +1,15 @@
+
 body{
     margin:0;
     background-color: gray;
     color: blanchedalmond;
 }
 span{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Brush Script MT', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
-    color: cadetblue;
+    color: rgb(235, 6, 6);
+    font-size: 30px;
+    font-weight: 700;
 }
 .bodytag{
     margin-left: 15px;
@@ -20,20 +23,21 @@ span{
 .h1text{
     margin-left: 45px;
     font-weight: 1000;
+    font-size: 50px;
 }
 .ptext{
     margin-left: 45px;
     font-weight: 1000;
-    font-size: 24px;
+    font-size: 40px;
 }
 #rightbox{
     width: 90%;
     display: absolute;
     right: 0;
-    margin-top:8%;
-    margin-bottom: 8%;
+    margin-top:5%;
     float: right;
     left: auto;
+    min-width: 700px;
 }
 #leftbox{
     width: 10%;
