@@ -41,6 +41,7 @@ span{
     background-color: black;
     color:white;
     height: 100vh;
+    min-width: 100px;
 }
 #bigbox{
     display: flex;
@@ -48,4 +49,7 @@ span{
 }
 div {
     display: block;
+}
+#2_h1{
+    margin-bottom: 2ex;
 }
