@@ -1,0 +1,51 @@
+body{
+    margin:0;
+    background-color: gray;
+    color: blanchedalmond;
+}
+span{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: cadetblue;
+}
+.bodytag{
+    margin-left: 15px;
+}
+.ptag{
+    margin-left: 30px;
+}
+.h1tag{
+    margin-left: 30px;
+}
+.h1text{
+    margin-left: 45px;
+    font-weight: 1000;
+}
+.ptext{
+    margin-left: 45px;
+    font-weight: 1000;
+    font-size: 24px;
+}
+#rightbox{
+    width: 90%;
+    display: absolute;
+    right: 0;
+    margin-top:8%;
+    margin-bottom: 8%;
+    float: right;
+    left: auto;
+}
+#leftbox{
+    width: 10%;
+    float: left;
+    background-color: black;
+    color:white;
+    height: 100vh;
+}
+#bigbox{
+    display: flex;
+    margin: auto;
+}
+div {
+    display: block;
+}
