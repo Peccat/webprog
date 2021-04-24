@@ -30,3 +30,4 @@ if(isset($_Post['Upload'])){
         echo "Kép feltöltése sikertelen a file formátuma miatt!";
     }
 }
+?>
