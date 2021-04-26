@@ -1,6 +1,6 @@
 img{
-    width: 400px; 
-    height: 400px; 
+    width: 100px; 
+    height: 100px; 
     margin-top: 20px; 
     margin-right: 32px;
     margin-left: 32px;
@@ -9,3 +9,4 @@ img{
 form{
     vertical-align: middle;
 }
+img 
