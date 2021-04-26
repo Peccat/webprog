@@ -1,35 +1,58 @@
 <!--Gallery Page-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
-    <title>Simon Kevin beadandó(képgaléria)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Kevin</title>
+    <link rel="stylesheet" href="stylehome.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <link rel="stylesheet" href="stylepictures.css">
     <link rel="stylesheet" href="scriptpicturesup.js">
 </head>
 <body>
-    
-    <form action="upload.php" method="POST" enctype="multipart/form-data">
-        <input type="file" name="file">
-        <button type="submit" name="Upload"> Kép feltöltése</button>
-    </form>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="indexvideos.html" class="menu-btn">Videos</a></li>
+                <li><a href="indexpictures.html" class="menu-btn">Pictures</a></li>
+                <li><a href="indexcontact.html" class="menu-btn">Contact Me</a></li>
+                <li><a href="signuptest.html" class="menu-btn">Log in/ Sign up</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
 
-    <div>
-        <img src="pictures/kep1.jpeg">
-        <img src="pictures/kep2.JPG">
-        <img src="pictures/kep3.jpg">
-        <img src="pictures/kep4.jpg">
-        <img src="pictures/kep5.jpg">
-        <img src="pictures/kep6.jpg">
-        <img src="pictures/kep7.jpg">
-        <img src="pictures/kep8.jpg">
-        <img src="pictures/kep9.jpg">
-        <img src="pictures/kep10.jpg">
-        <img src="pictures/kep11.jpg">
-        <img src="pictures/kep12.jpg">
-    </div>
+    <section class="home" id="home">
+        <form action="upload.php" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <button type="submit" name="Upload"> Kép feltöltése</button>
+        </form>
+        <div>
+            <img src="pictures/kep1.jpeg">
+            <img src="pictures/kep2.JPG">
+            <img src="pictures/kep3.jpg">
+            <img src="pictures/kep4.jpg">
+            <img src="pictures/kep5.jpg">
+            <img src="pictures/kep6.jpg">
+            <img src="pictures/kep7.jpg">
+            <img src="pictures/kep8.jpg">
+            <img src="pictures/kep9.jpg">
+            <img src="pictures/kep10.jpg">
+            <img src="pictures/kep11.jpg">
+            <img src="pictures/kep12.jpg">
+        </div>
+    </section>
 
-    
-
+    <script src="scripthome.js"></script>
 </body>
 </html>
