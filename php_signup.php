@@ -1,9 +1,8 @@
 <?php  
-
-$servername ="localhost";
-$username = "root";
-$password = "";
-$dbname = "codeflix";
+$servername ="mysql.omega:3306";
+$username = "userregistration";
+$password = "skevin22";
+$dbname = "Users";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -15,8 +14,7 @@ $name = $_POST["name"];
 $email = $_POST["email"];
 $password = $_POST["password"];
 $salt = "codeflix";
-$password_encrypted = sha1($password.$salt);
-
+$password_encrypted = sha256($password.$salt);
 
 $sql = "INSERT INTO signup (name, email, password) 
 VALUES ('$name', '$email', '$password_encrypted')";
