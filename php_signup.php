@@ -1,5 +1,5 @@
 <?php  
-$servername ="mysql.omega:3306";
+$servername ="mysql.nethely.hu:3306";
 $username = "userregistration";
 $password = "skevin22";
 $dbname = "Users";
@@ -10,13 +10,14 @@ if($conn->connect_error){
 	die("connection failed");
 }
 
-$name = $_POST["name"];
-$email = $_POST["email"];
-$password = $_POST["password"];
+$username = $_POST["Username"];
+$name = $_POST["Name"];
+$email = $_POST["Email"];
+$password = $_POST["Password"];
 $salt = "codeflix";
 $password_encrypted = sha256($password.$salt);
 
-$sql = "INSERT INTO signup (name, email, password) 
+$sql = "INSERT INTO Users (username, email, password, name) 
 VALUES ('$name', '$email', '$password_encrypted')";
 
 if($conn->query($sql) === TRUE){

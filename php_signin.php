@@ -1,5 +1,5 @@
 <?php
-$servername ="mysql.omega:3306";
+$servername ="mysql.nethely.hu:3306";
 $username = "userregistration";
 $password = "skevin22";
 $dbname = "Users";
@@ -10,12 +10,12 @@ if($conn->connect_error){
 	die("connection failed");
 }
 
-$email = $_POST["email"];
-$password = $_POST["password"];
+$email = $_POST["Email"];
+$password = $_POST["Password"];
 $salt = "codeflix";
 $password_encrypted = sha256($password.$salt);
 
-$sql = mysqli_query($conn, "SELECT count(*) as total from signup WHERE email = '".$email."' and 
+$sql = mysqli_query($conn, "SELECT count(*) as total from Users WHERE email = '".$email."' and 
 	password = '".$password_encrypted."'");
 $row = mysqli_fetch_array($sql);
 
